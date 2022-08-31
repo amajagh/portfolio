@@ -4,11 +4,17 @@
 - Use first person
 - Be casual
 - Focus in techonology areas
-- Talk about reasons for any thing
+- Talk about reasons for any
 - Tuareg personality
   - amajagh
   - Tuareg quotes (see appendix)
 ## To do list
+- Narrow Screen
+- Mobile Screen
+- Content
+- Interactive - Menu selector
+- Interactive - Random Quote
+---
 - Interactive - JavaScript
   - Menu selector, according to section
   - Random quotes
@@ -27,15 +33,13 @@
     - Texts
   - Quality
     - Links
-      - email
-      - linkedin
-      - twitter
       - instagram?
       - any other?
+  - Quotes classification
 ## To be added / Improvements
 - Randomize background photo
 ## Bugs / Adjustments
-## Appendix
+## Appendixes
 ### References
 + [Sample](https://priceless-kepler-06d70c.netlify.app)
 + [Ana Enders](http://anaenders.com)
