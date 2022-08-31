@@ -71,7 +71,6 @@ tr:hover {
 
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
-.material-icons.md-18:hover { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-36:hover { font-size: 48px; }
 .material-icons.md-48 { font-size: 48px; }
@@ -220,8 +219,8 @@ section {
 .title {
     position:relative;
     padding-top: 6vh;
-    left: 20%;
-    width: 70%;
+    left: 25%;
+    width: 60%;
     height:auto;
 }
 /* Section Quote */
@@ -249,8 +248,8 @@ section {
 .columns {
     position:relative;
     padding-top: 2%;
-    left: 20%;
-    width: 70%;
+    left: 25%;
+    width: 60%;
     height: auto;
     display:flex;
     flex-direction: row;
@@ -268,8 +267,8 @@ section {
 #portrait div:last-child {
     position:relative;
     padding-top: 2%;
-    left:20%;
-    width: 70%;
+    left:25%;
+    width: 60%;
 }
 
 /*Competences Section*/
@@ -280,8 +279,8 @@ section {
 .table {
     position:relative;
     padding-top: 2%;
-    left: 20%;
-    width: 70%;
+    left: 25%;
+    width: 60%;
     height:auto;
     display:flex;
     flex-direction: column;
@@ -301,7 +300,16 @@ section {
 #tasks {
     background-color:white;
 }
-
+/* Task Section Tasks */
+#tasks a {
+    width: 45%;
+    height:30vh;
+    background-image: url('../images/fabian-struwe-4cloovdyuvw-unsplash.jpg');
+    background-size:cover;
+    filter:grayscale(100%) opacity(25%);
+    background-repeat:no-repeat;
+    background-position:center;
+}
 /* Theory Section */
 #theory {
     background-color:antiquewhite;
@@ -313,8 +321,8 @@ section {
 /* Theory & Practice Sections (C&D)*/
 .rows {
     position:relative;
-    left: 20%;
-    width: 70%;
+    left: 25%;
+    width: 60%;
     display:flex;
     flex-direction: column;
 }
@@ -424,11 +432,12 @@ footer a:hover {
 
 
 /* Adaptative Parameters */
-/* Small Screen (640w x 480h) */
-@media only screen and (max-width: 640px), only screen and (max-height:480px) {
+/* Medium Screen (960w x 480h) */
+@media only screen and (max-width: 960px), only screen and (max-height:480px) {
     * {
         font-size: 12px;
     }
+    .material-icons.md-18 { font-size: 14px; }
     .material-icons.md-36 { font-size: 24px; }
     .material-icons.md-36:hover { font-size: 36px; }
     .material-icons.md-48 { font-size: 36px; }
@@ -437,21 +446,8 @@ footer a:hover {
 }
 
 /* Adaptative Parameters */
-/* Ultra Short Screen (320h) */
-@media only screen and (max-height:320px) {
-    * {
-        font-size: 9px;
-    }
-    .material-icons.md-36 { font-size: 18px; }
-    .material-icons.md-36:hover { font-size: 27px; }
-    .material-icons.md-48 { font-size: 27px; }
-    .material-icons.md-48:hover { font-size: 12px; }
-
-}
-
-/* Adaptative Parameters */
-/* Mobile Device (480w) */
-@media only screen and (max-width:480px) {
+/* Mobile Device (640w) */
+@media only screen and (max-width:640px) {
 
     /* General */
     h3 {
