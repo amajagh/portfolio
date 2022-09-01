@@ -9,6 +9,7 @@
         [Pascal van Gemert](http://www.pascalvangemert.nl/#/profile)
 */
 
+/* General Style */
 /* Reset */
 * {
     margin:0;
@@ -19,7 +20,6 @@
     color: darkslategray;
     text-align:left;
 }
-/* General Style */
 a:link, a:visited, a:active {
     text-decoration:none;
     font-weight: normal;
@@ -470,23 +470,20 @@ footer a:hover {
 /* Mobile Device (640w) */
 @media only screen and (max-width:640px) {
 
-    /* General Style */
+    /* General */
     h3 {
         text-align:center;
     }
-    table {
-        width:100%;
-    }
 
-    /* Header Navigation */
+    /* Top Navigation */
     header nav {
         left:0%;
         top:90%;
         width:100%;
         height:10%; 
+/*        z-index: 100; */
     }
-    
-    /* Main Section */
+    /* Content */
     main {
         flex-direction: column;
     }
@@ -508,6 +505,7 @@ footer a:hover {
     main a {
         padding-top:2vh;
     }
+
     /* Main Content */
     #content {
         margin-left:0%;
@@ -519,29 +517,25 @@ footer a:hover {
         left: 15%;
         width: 70%;
     }
-    /* Portrait Section */
-    #photo {
-        height:30vh;
-    }
-    /* Portrait Section (A)*/
+    /* Portrait */
     .columns {
         left: 15%;
         width: 70%;
         flex-direction: column;
         justify-content:baseline;
     }
-    /* Portrait Section Articles */
     .columns article {
         width:100%;
     }
-    /* Portrait Section Comment */
     .columns p {
         padding-top:0%;
         text-align:center;
     }
+    #photo {
+        height:30vh;
+    }
 
     /* Competences */
-    /* Competences Section Subsection (B)*/
     .table {
         left: 15%;
         width: 70%;
@@ -550,6 +544,9 @@ footer a:hover {
         flex-direction: column;
         justify-content:baseline;
     } 
+    table {
+        width:100%;
+    }
 
     #tasks a {
         width: 100%;
