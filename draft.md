@@ -9,8 +9,6 @@
   - amajagh
   - Tuareg quotes (see appendix)
 ## To do list
-- Narrow Screen
-- Mobile Screen
 - Content
 - Interactive - Menu selector
 - Interactive - Random Quote

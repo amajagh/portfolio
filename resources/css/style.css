@@ -348,7 +348,7 @@ section {
 }
 /* Link space */
 #link div:last-child {
-    top: 5vh;
+    top: 0vh;
 }
 /* Link row */
 #link a {
@@ -424,15 +424,16 @@ footer a:link, a:visited, a:active {
     font-weight: 200;    
 }
 /* Footer hover */
-footer a:hover {
+footer a:hover {        
     color:darkorange;
     font-weight: normal;
 }
 
 
-/* Adaptative Parameters */
-/* Medium Screen (960w x 480h) */
-@media only screen and (max-width: 960px), only screen and (max-height:480px) {
+/* Adaptative Parameters 
+/* Mobile Device or Short Screen (480w x 480h)
+/* Font size 75% */
+@media only screen and (max-width: 480px), only screen and (max-height:480px) {
     /* Reset */
     * {
         font-size: 12px;
@@ -466,10 +467,11 @@ footer a:hover {
     }
 }
 
-/* Adaptative Parameters */
-/* Mobile Device (640w) */
-@media only screen and (max-width:640px) {
-
+/* Adaptative Parameters
+/* Narrow Screen (960w) 
+/* One column 
+/* Margin 30% */
+@media only screen and (max-width:960px) {
     /* General Style */
     h3 {
         text-align:center;
@@ -478,6 +480,110 @@ footer a:hover {
         width:100%;
     }
 
+    /* Section Title */
+    .title {
+        left: 30%;
+        width: 50%;
+    }
+    
+    /* Portrait Section */
+    #photo {
+        height:30vh;
+    }
+    /* Portrait Section (A) */
+    .columns {
+        left: 30%;
+        width: 50%;
+        flex-direction: column;
+        justify-content:baseline;
+    }
+    /* Portrait Section Articles */
+    .columns article {
+        width:100%;
+    }
+    /* Portrait Section Comment */
+    .columns p {
+        padding-top:0%;
+        text-align:center;
+    }
+    /* Portrait Section Comment */
+    #portrait div:last-child {
+        left:30%;
+        width: 50%;
+    }
+
+    /* Competences */
+    /* Competences Section Subsection (B) */
+    .table {
+        left: 30%;
+        width: 50%;
+    }
+    .tabtot {
+        flex-direction: column;
+        justify-content:baseline;
+    } 
+
+    #tasks a {
+        width: 100%;
+        height:30vh;
+    }
+    
+    /* Theory & Practice */
+    .rows {
+        left: 30%;
+        width: 50%;
+    }
+    .rows article {
+        flex-direction: column;
+        justify-content:baseline;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+
+}
+
+/* Adaptative Parameters
+/* Ultra Narrow Screen (6400w) 
+/* One column 
+/* Margin 25% */
+@media only screen and (max-width:640px) {
+    /* Section Title */
+    .title {
+        left: 25%;
+        width: 60%;
+    }
+    /* Portrait Section (A) */
+    .columns {
+        left: 25%;
+        width: 60%;
+    }
+    /* Portrait Section Comment */
+    #portrait div:last-child {
+        left:25%;
+        width: 60%;
+    }
+
+    /* Competences */
+    /* Competences Section Subsection (B) */
+    .table {
+        left: 25%;
+        width: 60%;
+    }
+    
+    /* Theory & Practice */
+    .rows {
+        left: 25%;
+        width: 60%;
+    }
+}
+
+/* Adaptative Parameters */
+/* Mobile Device (480w) */
+@media only screen and (max-width:480px) {
     /* Header Navigation */
     header nav {
         left:0%;
@@ -519,25 +625,10 @@ footer a:hover {
         left: 15%;
         width: 70%;
     }
-    /* Portrait Section */
-    #photo {
-        height:30vh;
-    }
     /* Portrait Section (A)*/
     .columns {
         left: 15%;
         width: 70%;
-        flex-direction: column;
-        justify-content:baseline;
-    }
-    /* Portrait Section Articles */
-    .columns article {
-        width:100%;
-    }
-    /* Portrait Section Comment */
-    .columns p {
-        padding-top:0%;
-        text-align:center;
     }
 
     /* Competences */
@@ -546,30 +637,10 @@ footer a:hover {
         left: 15%;
         width: 70%;
     }
-    .tabtot {
-        flex-direction: column;
-        justify-content:baseline;
-    } 
-
-    #tasks a {
-        width: 100%;
-        height:30vh;
-    }
-    
     /* Theory & Practice */
     .rows {
         left: 15%;
         width: 70%;
-    }
-    .rows article {
-        flex-direction: column;
-        justify-content:baseline;
-    }
-    .left {
-        width: 100%;
-    }
-    .right {
-        width: 100%;
     }
 }
 
